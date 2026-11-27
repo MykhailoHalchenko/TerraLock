@@ -1,0 +1,76 @@
+[versions]
+agp = "8.7.3"
+kotlin = "2.4.20"
+composeMultiplatform = "1.7.0"
+coroutines = "1.9.0"
+serialization = "1.7.3"
+store5 = "5.0.0"
+ktor = "3.0.0"
+firebase = "2.8.0"
+maplibre = "11.8.0"
+playServicesLocation = "21.3.0"
+playServicesAuth = "21.2.0"
+credentials = "1.3.0"
+googleid = "1.1.1"
+suncalc = "3.11"
+activityCompose = "1.9.3"
+navigation3 = "1.1.0-alpha02"
+fluent = "v0.1.0"
+koin = "4.0.0"
+carApp = "1.4.0"
+smack = "4.4.8"
+mqtt = "1.2.5"
+junit = "4.13.2"
+androidxJunit = "1.2.1"
+espresso = "3.6.1"
+
+[libraries]
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+store5 = { module = "org.mobilenativefoundation.store:store5", version.ref = "store5" }
+
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+
+firebase-auth = { module = "dev.gitlive:firebase-auth", version.ref = "firebase" }
+firebase-firestore = { module = "dev.gitlive:firebase-firestore", version.ref = "firebase" }
+
+maplibre-sdk = { module = "org.maplibre.gl:android-sdk", version.ref = "maplibre" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+
+auth-credentials = { module = "androidx.credentials:credentials", version.ref = "credentials" }
+auth-credentials-play = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentials" }
+auth-googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
+
+car-app = { module = "androidx.car.app:app", version.ref = "carApp" }
+car-app-projected = { module = "androidx.car.app:app-projected", version.ref = "carApp" }
+
+smack-android = { module = "org.igniterealtime.smack:smack-android-extensions", version.ref = "smack" }
+smack-tcp = { module = "org.igniterealtime.smack:smack-tcp", version.ref = "smack" }
+mqtt-paho = { module = "org.eclipse.paho:org.eclipse.paho.client.mqttv3", version.ref = "mqtt" }
+
+nav3-runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "navigation3" }
+nav3-ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+
+fluent-ui = { module = "com.github.compose-fluent:fluent", version.ref = "fluent" }
+
+koin-lib-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-lib-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-lib-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin" }
+
+suncalc = { module = "org.shredzone.commons:commons-suncalc", version.ref = "suncalc" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+jetbrains-compose = { id = "org.jetbrains.compose", version.ref = "composeMultiplatform" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
